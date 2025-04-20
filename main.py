@@ -47,7 +47,7 @@ while max(player_scores) < max_score:
         print(f"\nYour total score is {player_scores[player_index]}\n\n")
 
 max_score = max(player_scores)
-winner_index = player_scores.index(max)
+winner_index = player_scores.index(max_score)
 
 print(f"Player {winner_index + 1} wins! Player {winner_index + 1} scored {max_score}!")
 
