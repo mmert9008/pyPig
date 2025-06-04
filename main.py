@@ -1,11 +1,13 @@
 import random
 
+
 def roll():
     min_roll = 1
     max_roll = 6
     roll = random.randint(min_roll, max_roll)
 
     return roll
+
 
 while True:
     num_players = input("Enter the number of players (2-4): ")
@@ -28,7 +30,9 @@ while max(player_scores) < max_score:
         current_score = 0
 
         while True:
-            wanna_roll = input(f"Player {player_index + 1}, would you like to roll (y)? ")
+            wanna_roll = input(
+                f"Player {player_index + 1}, would you like to roll (y)? "
+            )
             if wanna_roll.lower() != "y":
                 break
 
@@ -50,4 +54,3 @@ max_score = max(player_scores)
 winner_index = player_scores.index(max_score)
 
 print(f"Player {winner_index + 1} wins! Player {winner_index + 1} scored {max_score}!")
-
