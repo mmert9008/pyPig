@@ -1,7 +1,7 @@
 import random
 
 
-def roll():
+def roll() -> int:
     min_roll = 1
     max_roll = 6
     roll = random.randint(min_roll, max_roll)
@@ -9,7 +9,7 @@ def roll():
     return roll
 
 
-def main():
+def main() -> None:
     while True:
         num_players = input("Enter the number of players (2-4): ")
         if num_players.isdigit():
